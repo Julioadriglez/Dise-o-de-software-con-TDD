@@ -5,20 +5,20 @@
     });
 }) */
 
-const Spiderman = ('./../app/spiderman')
+const Spiderman = require('../app/spiderman')
 
 describe("Unit Test for Spiderman class",() => {
     test('1) Create an spiderman object', () => {
 
         //Aqui escribiremos el cogigo que queremos usar tal cuál
         //Quiero poder instanciar un objeto Spiderman con esta información
-        const andrewGarfield = new Spiderman("Spider,am Sony", 31, "Andrew Garfield", 2, "Sony" )
+        const andrewGarfield = new Spiderman("Spiderman Sony", 31, "Andrew Garfield", 2 , "Sony" )
 
         //Validaremos que este código funcione de la forma esperada 
         expect(andrewGarfield.name).toBe("Spiderman Sony")
         expect(andrewGarfield.age).toBe(31)
         expect(andrewGarfield.actor).toBe("Andrew Garfield")
-        expect(andrewGarfield.movies).tobe(31)
-        expect(andrewGarfield.studio).tobe("Sony")
+        expect(andrewGarfield.movies).toBe(2)
+        expect(andrewGarfield.studio).toBe("Sony")
     });
 })
